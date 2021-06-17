@@ -12,14 +12,14 @@ func main() {
 	var x int
 	fmt.Scanf("%d ", &x)
 	switch x {
-	case 6:
-		{
-			println("Anda memilih menu modulo")
-			println("Silahkan masukkan 2 bilangan positif")
-			print("Input : ")
-			var n, m int
-			fmt.Scanf("%d %d ", &n, &m)
-			lib.Mod(n, m)
-		}
+		case 6:
+			{
+				println("Anda memilih menu menu no 6")
+				println("Silahkan masukkan 2 bilangan positif")
+				print("Input : ")
+				var n, m int
+				fmt.Scanf("%d %d ", &n, &m)
+				lib.Mod(n, m)
+			}
 	}
 }
