@@ -269,5 +269,7 @@ func q15(t1 string, t2 string, pos1 int, pos2 int) {
 }
 
 func q16(t1 string, t2 string, pos1 int, pos2 int) {
+	println(t1[:pos1], ">", t1[pos1:], "\tstate = q16")
+	println(t2[:pos2], ">", t2[pos2:])
 	println("Finished, result =", strings.Count(t1, "0"))
 }
