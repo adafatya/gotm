@@ -9,6 +9,7 @@ func main() {
 	println("Simulasi Turing Machine")
 	println("1. Penjumlahan 2 bilangan positif")
 	println("2. Pengurangan 2 bilangan")
+	println("3. Perkalian 2 bilangan positif")
 	println("6. Modulo 2 bilangan positif")
 	println("8. Logaritma basis 2 dari n")
 	print("Masukkan pilihan menu : ")
@@ -32,6 +33,15 @@ func main() {
 				var n, m int
 				fmt.Scanf("%d %d ", &n, &m)
 				lib.Sub(n, m)
+			}
+		case 3:
+			{
+				println("Anda memilih menu no 3")
+				println("Silahkan masukkan 2 bilangan positif")
+				print("Input : ")
+				var n, m int
+				fmt.Scanf("%d %d ", &n, &m)
+				lib.Mul(n, m)
 			}
 		case 6:
 			{
