@@ -10,6 +10,7 @@ func main() {
 	println("1. Penjumlahan 2 bilangan positif")
 	println("2. Pengurangan 2 bilangan")
 	println("3. Perkalian 2 bilangan positif")
+	println("5. Faktorial dari sebuah bilangan")
 	println("6. Modulo 2 bilangan positif")
 	println("8. Logaritma basis 2 dari n")
 	print("Masukkan pilihan menu : ")
@@ -42,6 +43,15 @@ func main() {
 				var n, m int
 				fmt.Scanf("%d %d ", &n, &m)
 				lib.Mul(n, m)
+			}
+		case 5:
+			{
+				println("Anda memilih menu no 5")
+				println("Silahkan masukkan bilangan positif")
+				print("input : ")
+				var n int
+				fmt.Scanf("%d ", &n)
+				lib.Fac(n)
 			}
 		case 6:
 			{

@@ -6,6 +6,7 @@ import (
 	"turing/lib/add"
 	"turing/lib/sub"
 	"turing/lib/mul"
+	"turing/lib/fac"
 )
 
 func Mod(n int, m int)  {
@@ -26,4 +27,8 @@ func Sub(n int, m int)  {
 
 func Mul(n int, m int) {
 	mul.Mul(n, m)
+}
+
+func Fac(n int) {
+	fac.Fac(n)
 }
