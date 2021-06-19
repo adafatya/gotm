@@ -4,6 +4,7 @@ import (
 	"turing/lib/mod"
 	"turing/lib/log2"
 	"turing/lib/add"
+	"turing/lib/sub"
 )
 
 func Mod(n int, m int)  {
@@ -16,4 +17,8 @@ func Log2(n int)  {
 
 func Add(n int, m int) {
 	add.Add(n, m)
+}
+
+func Sub(n int, m int)  {
+	sub.Sub(n, m)
 }
