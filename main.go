@@ -13,6 +13,7 @@ func main() {
 	println("4. Pembagian 2 bilangan positif")
 	println("5. Faktorial dari sebuah bilangan")
 	println("6. Modulo 2 bilangan positif")
+	println("7. Perpangkatan 2 bilangan positif")
 	println("8. Logaritma basis 2 dari n")
 	print("Masukkan pilihan menu : ")
 	var x int
@@ -71,6 +72,15 @@ func main() {
 				var n, m int
 				fmt.Scanf("%d %d ", &n, &m)
 				lib.Mod(n, m)
+			}
+		case 7:
+			{
+				println("Anda memilih menu no 7")
+				println("Silahkan masukkan 2 bilangan")
+				print("Input : ")
+				var n, m int
+				fmt.Scanf("%d %d ", &n, &m)
+				lib.Pow(n, m)
 			}
 		case 8:
 			{

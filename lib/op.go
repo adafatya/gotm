@@ -8,6 +8,7 @@ import (
 	"turing/lib/mul"
 	"turing/lib/fac"
 	"turing/lib/div"
+	"turing/lib/pow"
 )
 
 func Mod(n int, m int)  {
@@ -36,4 +37,8 @@ func Fac(n int) {
 
 func Div(n int, m int) {
 	div.Div(n, m)
+}
+
+func Pow(n int, m int) {
+	pow.Pow(n, m)
 }
