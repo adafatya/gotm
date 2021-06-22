@@ -34,7 +34,7 @@ func q0(s string, pos int) {
 		q1(s, pos+1)
 	} else if s[pos] == '1' {
 		s = s[:pos] + "B" + s[pos+1:]
-		q12(s, pos+1)
+		q13(s, pos+1)
 	} else {
 		println("Halted")
 	}
@@ -86,8 +86,7 @@ func q4(s string, pos int) {
 	if s[pos] == '0' {
 		q4(s, pos+1)
 	} else if s[pos] == 'B' {
-		// s = s[:pos] + "0B"
-		s = s[:pos] + "0" + s[pos+1:]
+		s = s[:pos] + "0B"
 		q5(s, pos-1)
 	} else {
 		println("Halted")
@@ -222,8 +221,8 @@ func q15(s string, pos int) {
 	if s[pos] == '0' {
 		q15(s, pos-1)
 	} else if s[pos] == 'B' {
-		s = "B" + s[:pos] + "0" + s[pos+1:]
-		q15(s, pos+1)
+		s = s[:pos] + "0" + s[pos+1:]
+		q16(s, pos+1)
 	} else {
 		println("Halted")
 	}
@@ -341,5 +340,9 @@ func q24(s string, pos int) {
 
 func q25(s string, pos int) {
 	println(s[:pos], ">", s[pos:], "\tstate = q25")
-	println("Finished, result =", strings.Count(s, "0"))
+	var res int = strings.Count(s, "0")
+	if strings.Count(s, "Y") > 0 {
+		res *= -1
+	}
+	println("Finished, result =", res)
 }
