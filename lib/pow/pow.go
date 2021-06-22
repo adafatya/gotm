@@ -11,6 +11,7 @@ func Pow(n int, m int) {
 		s += "X"
 	} else if(n < 0) {
 		s += "Y"
+		n *= -1
 	}
 	for i := 0; i < n; i++ {
 		s += "0"
@@ -20,6 +21,7 @@ func Pow(n int, m int) {
 		s += "X"
 	} else if(m < 0) {
 		s += "Y"
+		m *= -1
 	}
 	for i := 0; i < m; i++ {
 		s += "0"

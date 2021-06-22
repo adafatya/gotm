@@ -11,6 +11,7 @@ func Fac(n int) {
 		s += "X"
 	} else if (n < 0) {
 		s += "Y"
+		n *= -1
 	}
 	for i := 0; i < n; i++ {
 		s += "0"
