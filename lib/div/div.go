@@ -174,7 +174,7 @@ func q12(s string, pos int) {
 	time.Sleep(time.Second)
 	if(s[pos] == 'Y') {
 		s = s[:pos]+"B"+s[pos+1:]
-		q12(s, pos-1)
+		q12(s, pos+1)
 	} else if(s[pos] == '0') {
 		s = s[:pos]+"B"+s[pos+1:]
 		q12(s, pos+1)
