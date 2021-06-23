@@ -293,7 +293,7 @@ func q22(s string, pos int) {
 	println(s[:pos], ">", s[pos:], "\tstate = q22")
 	time.Sleep(time.Second)
 	if(s[pos] == '1') {
-		q23(s, pos+1)
+		q23(s, pos-1)
 	} else {
 		println("Halted")
 	}
@@ -306,8 +306,6 @@ func q23(s string, pos int) {
 		q23(s, pos-1)
 	} else if(s[pos] == 'Z') {
 		q15(s, pos+1)
-	} else if(s[pos] == 'X') {
-		q24(s, pos+1)
 	} else {
 		println("Halted")
 	}
